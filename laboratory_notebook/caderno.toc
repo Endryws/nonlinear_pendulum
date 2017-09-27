@@ -1,0 +1,9 @@
+\select@language {portuges}
+\contentsline {section}{\numberline {0.1}An\IeC {\'a}lise num\IeC {\'e}rica do problema}{3}{section.0.1}
+\contentsline {chapter}{\nonumberline Espa\IeC {\c c}o de estado para o p\IeC {\^e}ndulo n\IeC {\~a}o-linear}{4}{chapter*.2}
+\contentsline {experiment}{\numberline {1}Resposta peri\IeC {\'o}dica}{4}{experiment.1.1}
+\contentsline {experiment}{\numberline {2}Resposta ca\IeC {\'o}tica}{5}{experiment.1.2}
+\contentsline {chapter}{\nonumberline Se\IeC {\c c}\IeC {\~a}o de Poincar\IeC {\'e}}{6}{chapter*.3}
+\contentsline {chapter}{\nonumberline Identifica\IeC {\c c}\IeC {\~a}o das \IeC {\'o}rbitas peri\IeC {\'o}dicas inst\IeC {\'a}veis imersas no atrator apresentado}{7}{chapter*.4}
+\contentsline {experiment}{\numberline {1}OPIs identificadas}{7}{experiment.3.1}
+\contentsline {experiment}{\numberline {2}Espa\IeC {\c c}os de estado das \IeC {\'o}rbitas identificadas}{8}{experiment.3.2}

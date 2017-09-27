@@ -1,0 +1,97 @@
+\documentclass[idxtotoc,hyperref,openany]{labbook} % 'openany' here removes the gap page between days, erase it to restore this gap; 'oneside' can also be added to remove the shift that odd pages have to the right for easier reading
+
+\usepackage[ 
+  backref=page,
+  pdfpagelabels=true,
+  plainpages=false,
+  colorlinks=true,
+  bookmarks=true,
+  pdfview=FitB]{hyperref} % Required for the hyperlinks within the PDF
+  
+\usepackage{booktabs} % Required for the top and bottom rules in the table
+\usepackage{float} % Required for specifying the exact location of a figure or table
+\usepackage{graphicx} % Required for including images
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage[portuges]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{pdfpages}
+\usepackage{subfiles}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Command to make the lines in the title page
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+\graphicspath{{images/}}
+%----------------------------------------------------------------------------------------
+%	DEFINITION OF EXPERIMENTS
+%----------------------------------------------------------------------------------------
+
+\newexperiment{example}{This is an example experiment}
+\newexperiment{example2}{This is another example experiment}
+\newexperiment{example3}{This is yet another example experiment}
+\newexperiment{table}{This shows a sample table}
+%\newexperiment{shorthand}{Description of the experiment}
+
+%---------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\begin{titlepage}
+	\begin{center}
+		\huge{Universidade Federal do Rio de Janeiro}
+
+\vspace{10pt}
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=6cm]{mec.jpg}
+\hspace{1cm}
+\includegraphics[height=3cm, width=7cm]{Mecanon.jpg}
+\end{figure}
+        
+        \vspace{85pt}
+        
+		\textbf{\LARGE{Caderno de Laboratório}}
+		\large{\\ \textbf{Controle de um pêndulo não linear}}
+		\vspace{160pt}
+		
+	\end{center}
+	
+	\begin{flushleft}
+		\begin{tabbing}
+			Aluno\qquad\qquad\= Endryws Medeiros Costa de Moura\\
+			\>\hspace{7mm}\textbf{endmoura@poli.ufrj.br}\\
+			\\
+			
+			Professor\> Marcelo Amorim Savi \\
+			\>\hspace{-5mm}\textbf{savi@mecanica.coppe.ufrj.br}
+		
+	\end{tabbing}
+		  
+	\end{flushleft}
+	
+	\begin{center}
+		\vspace{\fill}
+		Caderno iniciado em 19 de setembro de 2017
+	\end{center}
+\end{titlepage}
+
+\tableofcontents
+
+%\mainmatter % Use Arabic numerals for page numbers
+
+%-----------------------------------------------------------
+\newpage
+\section{Análise numérica do problema}
+
+\subfile{state_space/state_space.tex}
+\subfile{poincare_section/poincare_section.tex}
+\subfile{OPI_identification/OPI_identification.tex}
+
+
+
+
+
+
+\end{document}
