@@ -17,8 +17,8 @@ def aprend(fil,tl):
     lol=open('poin_orb.txt','w');
     g=np.loadtxt(poin,'float','#',None,None,8,(0,1),False,0);
     g=list(g);
-    r1=0.2;
-    r2=0.6;
+    r1=0.15;
+    r2=0.3;
 
     ag={}; at={}; p=0;
 	

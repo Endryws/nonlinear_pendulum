@@ -20,7 +20,7 @@ def control_tdf(func,x0,nstep,nsap,omsap,mode=1,lyapu=0,con1=0,con2=0,r=0,tob=1)
     "parametro k11 con1" 
     "parametro k22 con2"
     "parâmetro ETDF controle r"
-    "xt paramtro traçar deslocamento ou nao"
+    "xt parametro traçar deslocamento ou nao"
     '''
     x=[]; xp=[]; pmapx=[]; pmapxp=[]; t=[]; contr=[]; ee=[]; eep=[]; contrde=[]; tpoin=[];
     pst=''; xst=''; Jaco=sci.matrix(sci.identity(len(x0))); ene=0; tst=-1; prb=1;
