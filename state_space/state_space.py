@@ -144,14 +144,25 @@ f.write("w = " + str(w) + "\n\n")
  
 f.write( "     " + "        phi          " +"                 dotphi         " + "                 time          "+ "\n")
     
-for i in range(1,number_of_periods):
-    for j in range(1,number_of_divisions_per_period):
+# ===== Trial part =========== #
+
+for i in range(0,number_of_periods):
+    for j in range(0,number_of_divisions_per_period):
         t = t + step
         out = RK4(Pendulum, state_vector, step, t)
         state_vector = out
-	if i*j >= trash:
-            value = ("   %23.15E        %23.15E        %23.15E \n" %(state_vector[0], state_vector[1], t)) 
-	    f.write(value)
+        value = ("   %23.15E        %23.15E        %23.15E \n" %(state_vector[0], state_vector[1], t)) 
+        f.write(value)
+
+
+#for i in range(1,number_of_periods):
+#    for j in range(1,number_of_divisions_per_period):
+#        t = t + step
+#        out = RK4(Pendulum, state_vector, step, t)
+#        state_vector = out
+#	if i*j >= trash:
+#            value = ("   %23.15E        %23.15E        %23.15E \n" %(state_vector[0], state_vector[1], t)) 
+#	    f.write(value)
 
     
 fim = timeit.default_timer()
